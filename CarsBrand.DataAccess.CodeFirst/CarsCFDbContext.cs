@@ -59,6 +59,9 @@ namespace CarsBrand.DataAccess.CodeFirst
                    .HasForeignKey(c => c.BrandId)
                    .OnDelete(DeleteBehavior.ClientSetNull);
             });
+
+            modelBuilder.Entity<Brand>().HasData(bmw, audi);
+            modelBuilder.Entity<Car>().HasData(bmw1, bmw2, audi1, audi2);
         }
     }
 }
