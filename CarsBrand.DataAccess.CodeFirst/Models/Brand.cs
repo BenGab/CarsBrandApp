@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace CarsBrand.Models
+namespace CarsBrand.DataAccess.CodeFirst.Models
 {
     public class Brand
     {

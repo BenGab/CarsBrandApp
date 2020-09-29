@@ -1,4 +1,4 @@
-﻿namespace CarsBrand.Models
+﻿namespace CarsBrand.DataAccess.CodeFirst.Models
 {
     public class Car
     {
@@ -10,6 +10,6 @@
 
         public decimal BasePrice { get; set; }
 
-        public int  BrandId { get; set; }
+        public int BrandId { get; set; }
     }
 }

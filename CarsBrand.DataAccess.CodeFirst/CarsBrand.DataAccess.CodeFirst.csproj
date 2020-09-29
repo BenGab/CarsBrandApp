@@ -15,10 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CarsBrand.Models\CarsBrand.Models.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Update="CarsCfDB.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

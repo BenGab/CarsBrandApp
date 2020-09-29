@@ -3,11 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarsBrandApp", "CarsBrandApp\CarsBrandApp.csproj", "{0635FA4D-4B6B-499D-8DFA-88DA9A01B3DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarsBrandApp", "CarsBrandApp\CarsBrandApp.csproj", "{0635FA4D-4B6B-499D-8DFA-88DA9A01B3DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarsBrand.Models", "CarsBrand.Models\CarsBrand.Models.csproj", "{05C704DA-ADDE-4FEA-BF8B-46AF74A05B80}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarsBrand.DataAccess.CodeFirst", "CarsBrand.DataAccess.CodeFirst\CarsBrand.DataAccess.CodeFirst.csproj", "{018CCFF1-771E-48D5-919D-934A858F6DCF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarsBrand.DataAccess.CodeFirst", "CarsBrand.DataAccess.CodeFirst\CarsBrand.DataAccess.CodeFirst.csproj", "{018CCFF1-771E-48D5-919D-934A858F6DCF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +17,6 @@ Global
 		{0635FA4D-4B6B-499D-8DFA-88DA9A01B3DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0635FA4D-4B6B-499D-8DFA-88DA9A01B3DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0635FA4D-4B6B-499D-8DFA-88DA9A01B3DD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{05C704DA-ADDE-4FEA-BF8B-46AF74A05B80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{05C704DA-ADDE-4FEA-BF8B-46AF74A05B80}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{05C704DA-ADDE-4FEA-BF8B-46AF74A05B80}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{05C704DA-ADDE-4FEA-BF8B-46AF74A05B80}.Release|Any CPU.Build.0 = Release|Any CPU
 		{018CCFF1-771E-48D5-919D-934A858F6DCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{018CCFF1-771E-48D5-919D-934A858F6DCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{018CCFF1-771E-48D5-919D-934A858F6DCF}.Release|Any CPU.ActiveCfg = Release|Any CPU

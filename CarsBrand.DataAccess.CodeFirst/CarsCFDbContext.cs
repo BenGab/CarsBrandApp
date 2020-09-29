@@ -1,4 +1,4 @@
-﻿using CarsBrand.Models;
+﻿using CarsBrand.DataAccess.CodeFirst.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace CarsBrand.DataAccess.CodeFirst
