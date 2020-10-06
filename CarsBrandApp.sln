@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarsBrandApp", "CarsBrandAp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarsBrand.DataAccess.CodeFirst", "CarsBrand.DataAccess.CodeFirst\CarsBrand.DataAccess.CodeFirst.csproj", "{018CCFF1-771E-48D5-919D-934A858F6DCF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarsBrand.Repository", "CarsBrand.Repository\CarsBrand.Repository.csproj", "{A76D6287-8B46-42DB-B84B-081B22C4EB57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carsdbrands.Logic", "Carsdbrands.Logic\Carsdbrands.Logic.csproj", "{13C72BBB-B10D-4B13-97EC-B7D19DE4D655}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{018CCFF1-771E-48D5-919D-934A858F6DCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{018CCFF1-771E-48D5-919D-934A858F6DCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{018CCFF1-771E-48D5-919D-934A858F6DCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A76D6287-8B46-42DB-B84B-081B22C4EB57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A76D6287-8B46-42DB-B84B-081B22C4EB57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A76D6287-8B46-42DB-B84B-081B22C4EB57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A76D6287-8B46-42DB-B84B-081B22C4EB57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13C72BBB-B10D-4B13-97EC-B7D19DE4D655}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13C72BBB-B10D-4B13-97EC-B7D19DE4D655}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13C72BBB-B10D-4B13-97EC-B7D19DE4D655}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13C72BBB-B10D-4B13-97EC-B7D19DE4D655}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

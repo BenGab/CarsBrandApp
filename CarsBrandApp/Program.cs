@@ -1,4 +1,7 @@
 ﻿using CarsBrand.DataAccess.CodeFirst;
+using CarsBrand.Repository.Repository;
+using CarsBrands.Repostiitroy.Repository;
+using Carsdbrands.Logic;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -24,18 +27,14 @@ namespace CarsBrandApp
     {
         static void Main(string[] args)
         {
+            
             using(var ctx = new CarsCFDbContext())
             {
-                ctx.Brands.Select(x => x.Name).ToConsole("BRANDS");
-                ctx.Cars.Select(x=> $"{x.Model} from {x.Brand.Name}").ToConsole("MODELS");
+                ICarService carsSevice = new CarService(new CarRepository(ctx), new BrandRepositroy(ctx));
+                //ctx.Brands.Select(x => x.Name).ToConsole("BRANDS");
+                carsSevice.GetAllCars().Select(x=> $"{x.Model} from {x.Brand.Name}").ToConsole("MODELS");
 
-                var brandAverage = from car in ctx.Cars.Include(c => c.Brand)
-                                   group car by new { car.Brand.Id, car.Brand.Name } into grp
-                                   select new
-                                   {
-                                       BrandName = grp.Key.Name,
-                                       AvPrice = grp.Average(c => c.BasePrice)
-                                   };
+                var brandAverage = carsSevice.GetAveragebyBrand();
 
                 brandAverage.ToConsole("Average brands");
             }

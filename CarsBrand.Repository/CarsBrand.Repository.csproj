@@ -1,12 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Carsdbrands.Logic\Carsdbrands.Logic.csproj" />
+    <ProjectReference Include="..\CarsBrand.DataAccess.CodeFirst\CarsBrand.DataAccess.CodeFirst.csproj" />
   </ItemGroup>
 
 </Project>
