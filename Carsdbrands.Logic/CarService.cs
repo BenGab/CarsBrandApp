@@ -20,13 +20,15 @@ namespace Carsdbrands.Logic
 
         public ICollection<Car> GetAllCars()
         {
-            return carsrepository.GetAll().ToList(); //List<Car>
+            return carsrepository.GetAll()?.ToList() ?? new List<Car>();
         }
 
         public ICollection<AverageResult> GetAveragebyBrand()
         {
-            var q1 = from car in carsrepository.GetAll().Include(c => c.Brand)
-                   group car by new { car.Brand.Id, car.Brand.Name } into grp
+            var q1 = from car in carsrepository.GetAll()
+                     join brand in brandsRepository.GetAll() 
+                     on car.BrandId equals brand.Id
+                   group car by new { brand.Id, brand.Name } into grp
                    select new AverageResult
                    {
                        Name = grp.Key.Name,
